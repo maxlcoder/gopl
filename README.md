@@ -1,7 +1,7 @@
 ### Go程序设计语言
 
 
-![cover](http://www.gopl.io/cover.png){:height="100" width="100"}
+![cover](http://www.gopl.io/cover.png){:height="100px" width="100px"}
 
 #### 目录结果
 
