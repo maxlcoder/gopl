@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -26,8 +27,8 @@ func main() {
 		case xml.EndElement:
 			stack = stack[:len(stack)-1] // 出栈
 		case xml.CharData:
-			if containsAl {
-
+			if containsAll(stack, os.Args[1:]) {
+				fmt.Printf("%s: %s\n", strings.Join(stack, ","), tok)
 			}
 		}
 
