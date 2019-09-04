@@ -7,26 +7,59 @@
 
  ```shell
  gopl
- └── ch1
-     ├── 1.1.go         # 习题
-     ├── 1.2.go
-     ├── 1.3_test.go	
-     ├── dup1.go		# 文中较长的功能代码
-     ├── dup2.go
-     ├── dup3.go
-     ├── echo1.go
-     └── fetchall.go
+ ├── README.md
+ ├── ch1
+ │   ├── 1.1 # 习题
+ │   │   └── main.go
+ │   ├── 1.10
+ │   ├── 1.11
+ │   ├── 1.12
+ │   │   └── main.go
+ │   ├── 1.2
+ │   │   └── main.go
+ │   ├── 1.3
+ │   │   └── main_test.go
+ │   ├── 1.4
+ │   │   ├── main.go
+ │   │   └── text.txt
+ │   ├── 1.5
+ │   │   └── main.go
+ │   ├── 1.6
+ │   │   └── main.go
+ │   ├── 1.7
+ │   │   └── main.go
+ │   ├── 1.8
+ │   │   └── main.go
+ │   ├── 1.9
+ │   │   └── main.go
+ │   ├── dup1 # 示例代码
+ │   │   └── main.go
+ │   ├── dup2
+ │   │   ├── main.go
+ │   │   └── text.txt
+ │   ├── dup3
+ │   │   └── main.go
+ │   ├── echo1
+ │   │   └── main.go
+ │   ├── echo2
+ │   │   └── main.go
+ │   ├── echo3
+ │   │   └── main.go
+ │   ├── fetch
+ │   │   └── main.go
+ │   ├── fetchall
+ │   │   └── main.go
+ │   ├── helloworld
+ │   │   └── main.go
+ │   ├── lissajous
+ │   │   └── main.go
+ │   ├── server1
+ │   │   └── main.go
+ │   └── server2
+ │       └── main.go
+ .
+ .
+ .
+
  ```
  
- > 这里和原书配套的随书源码对应的目录有一些不同
- > ```shell
- > gopl
- >  └── ch1
- >     ├── hellworld
- >     │      └── main.go
- >     ├── echo1
- >     ·      └── main.go
- >     ·
- >     ·
- >     ·
- > ```
