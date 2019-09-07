@@ -1,4 +1,4 @@
-// echo4 输出其命令行参数
+// echo4 输出其命令
 package main
 
 import (
