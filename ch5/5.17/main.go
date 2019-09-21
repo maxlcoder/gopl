@@ -74,6 +74,6 @@ func ElementsByTagName(doc *html.Node, names ...string) []*html.Node  {
 		forEachNode(doc, name, startElement)
 	}
 	return nodes
-	
+
 }
 

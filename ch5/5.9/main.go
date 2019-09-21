@@ -6,8 +6,8 @@ import (
 )
 
 func expand(s string, f func(string) string) string {
-   sArr := strings.Split(s,"$foo")
-   resp := ""
+	sArr := strings.Split(s,"$foo")
+	resp := ""
 	if len(sArr) > 1 {
 		for k, v := range sArr {
 			if k == len(sArr) - 1 {
@@ -19,7 +19,7 @@ func expand(s string, f func(string) string) string {
 	} else {
 		resp += sArr[0]
 	}
-   return resp
+	return resp
 }
 
 func f(s string) string {
