@@ -9,7 +9,7 @@ import (
 
 func comma(s string) string {
 	n := len(s)
-	if n <=3 {
+	if n <= 3 {
 		return s
 	}
 	var buf bytes.Buffer

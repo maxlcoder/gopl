@@ -9,7 +9,7 @@ func (m Meter) String() string {
 	return fmt.Sprintf("%gM", m)
 }
 
-func (f Foot) Sting() string {
+func (f Foot) String() string {
 	return fmt.Sprintf("%gft", f)
 }
 

@@ -14,6 +14,7 @@ func intsToString(values []int) string {
 			buf.WriteString("，")
 		}
 		fmt.Fprintf(&buf, "%d", v)
+		//buf.WriteString(strconv.Itoa(v))
 	}
 	buf.WriteByte(']')
 	return buf.String()

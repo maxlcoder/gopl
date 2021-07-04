@@ -5,11 +5,11 @@ import "fmt"
 type Flags uint
 
 const (
-	FlagUp Flags = 1 << iota // 向上
-	FlagBroadcast // 支持广播访问
-	FlagLoopback // 是环回接口
-	FlagPointToPoint // 属于点对点链路
-	FlagMulticast // 支持多路广播访问
+	FlagUp           Flags = 1 << iota // 向上
+	FlagBroadcast                      // 支持广播访问
+	FlagLoopback                       // 是环回接口
+	FlagPointToPoint                   // 属于点对点链路
+	FlagMulticast                      // 支持多路广播访问
 )
 
 func IsUp(v Flags) bool {
