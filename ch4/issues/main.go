@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-	fmt.Println(os.Args[1:])
 	result, err := github.SearchIssues(os.Args[1:])
 	if err != nil {
 		log.Fatal(err)
