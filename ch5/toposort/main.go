@@ -24,7 +24,8 @@ var prereqs = map[string][]string{
 }
 
 func main() {
-	for i, course := range topoSort(prereqs){
+	var resp = topoSort(prereqs)
+	for i, course := range resp{
 		fmt.Printf("%d: \t%s\n", i+1, course)
 	}
 }

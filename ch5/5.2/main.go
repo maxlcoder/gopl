@@ -25,7 +25,6 @@ var count = make(map[string]int)
 
 func visit(n *html.Node) {
 	if n.Type == html.ElementNode {
-		fmt.Println(n.Data)
 		count[n.Data]++
 	}
 	for c := n.FirstChild; c != nil; c = c.NextSibling {
