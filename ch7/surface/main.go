@@ -8,6 +8,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/maxlcoder/gopl/ch7/eval"
 	"io"
 	"log"
 	"math"
@@ -15,8 +16,6 @@ import (
 )
 
 //!+parseAndCheck
-import "gopl.io/ch7/eval"
-
 //!-parseAndCheck
 
 // -- copied from gopl.io/ch3/surface --

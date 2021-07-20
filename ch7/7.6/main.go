@@ -1,4 +1,4 @@
-package main
+package __6
 
 // func (f *celsiusFlag) Set(s string) error {
 // 	var unit string
