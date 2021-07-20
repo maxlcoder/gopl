@@ -76,27 +76,27 @@ func (x customSort) Swap(i, j int)  {
 
 
 func main() {
-	// printTracks(tracks)
-	//
-	// fmt.Println()
-	// sort.Sort(byArtist(tracks))
-	//
-	// printTracks(tracks)
+	printTracks(tracks)
 
-	sort.Sort(customSort{tracks, func(x, y *Track) bool {
-		if x.Title != y.Title {
-			return x.Title < y.Title
-		}
-		if x.Year != y.Year {
-			return x.Year < y.Year
-		}
-		if x.Length != y.Length {
-			return x.Length < y.Length
-		}
-		return false
-	}})
+	fmt.Println()
+	sort.Sort(byArtist(tracks))
 
 	printTracks(tracks)
+
+	//sort.Sort(customSort{tracks, func(x, y *Track) bool {
+	//	if x.Title != y.Title {
+	//		return x.Title < y.Title
+	//	}
+	//	if x.Year != y.Year {
+	//		return x.Year < y.Year
+	//	}
+	//	if x.Length != y.Length {
+	//		return x.Length < y.Length
+	//	}
+	//	return false
+	//}})
+	//
+	//printTracks(tracks)
 
 
 }
