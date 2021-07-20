@@ -11,11 +11,10 @@ type BytingCounter struct {
 	count int64
 }
 
-func (c *BytingCounter) Write(p []byte) (n int, err error) {
-	c.w.Write(p)
-	n = len(p)
+func (c *BytingCounter) Write(p []byte) (int, error) {
+	n, err := c.w.Write(p)
 	c.count += int64(n)
-	return
+	return n, err
 }
 
 func CountWriter(w io.Writer) (io.Writer, *int64) {
