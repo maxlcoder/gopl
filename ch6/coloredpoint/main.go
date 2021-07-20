@@ -30,6 +30,7 @@ func main() {
 	cp.X = 1
 	fmt.Println(cp.Point.X)
 
+
 	cp.Point.Y = 2
 	fmt.Println(cp.Y)
 

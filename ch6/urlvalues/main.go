@@ -13,8 +13,10 @@ func main() {
 	fmt.Println(m.Get("lang"))
 	fmt.Println(m.Get("q"))
 	fmt.Println(m.Get("item"))
+	fmt.Println(m["item"])
 
 	m = nil
+	fmt.Println(m.Get("item"))
 
 
 }
