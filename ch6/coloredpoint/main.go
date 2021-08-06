@@ -20,7 +20,7 @@ func (p Point) Distance(q Point) float64  {
 	return math.Hypot(q.X-p.X, q.Y-p.Y)
 }
 
-func (p *Point) ScaleBy(factor float64)  {
+func (p Point) ScaleBy(factor float64) {
 	p.X *= factor
 	p.Y *= factor
 }
@@ -39,8 +39,20 @@ func main() {
 	var p = ColoredPoint{Point{1,1}, red}
 	var q = ColoredPoint{Point{5,4}, blue}
 	fmt.Println(p.Distance(q.Point))
-
 	p.ScaleBy(2)
-	q.ScaleBy(2)
-	fmt.Println(p.Distance(q.Point))
+	fmt.Println(p)
+	var testq = Point{1, 1}
+	fmt.Println(testq)
+	fmt.Println(p.Distance(testq))
+	//fmt.Println(p.X)
+	//q.ScaleBy(2)
+	//fmt.Println(q.X)
+	//fmt.Println(p.Distance(q.Point))
+
+	var b = struct {
+		ai int
+	}{
+		ai: 1,
+	}
+	fmt.Println(b.ai)
 }
