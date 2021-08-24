@@ -1,7 +1,7 @@
 package memo_test
 
 import (
-	"github.com/maxlcoder/gopl/ch9/memo1"
+	"github.com/maxlcoder/gopl/ch9/memo2"
 	"github.com/maxlcoder/gopl/ch9/memotest"
 	"testing"
 )
